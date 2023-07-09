@@ -23,6 +23,18 @@ allSquares.forEach(square => {
 });
 
 let newPixelsNb;
+
 askPixels.onclick = () => {
-    newPixelsNb = Number(prompt("Choose the number of squares per side (default 16, max is 100)"))
+    newPixelsNb = Number(prompt("Choose the number of squares per side (default 16, max is 100)"));
+    manyDivs = "";
+    for (i=0; i<(newPixelsNb*newPixelsNb); i++) {
+        manyDivs += "<div></div>";
+    }
+    gridContainer.innerHTML = manyDivs;
+    const allSquares = document.querySelectorAll('.grid-container > div');
+    allSquares.forEach(square => {
+        square.addEventListener("mouseover", (square) => {
+            square.target.style.backgroundColor = "red";
+        })
+    });
 };

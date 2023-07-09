@@ -11,8 +11,8 @@
     display: flex;
     flex-flow: wrap;
     gap: 1px;
-    width: 672px;
-    height: 672px;
+    width: 900px;
+    height: 500px;
 }
 
 .grid-container div {
@@ -21,6 +21,7 @@
     width: 6px;
     margin: 0px;
     padding: 0px;
+    flex: 1 1 auto;
 }
 
 /*
