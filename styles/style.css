@@ -1,0 +1,23 @@
+.global-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.grid-container {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+    max-width: 672px;
+}
+
+.grid-container div {
+    background-color: aliceblue;
+    height: 32px;
+    width: 32px;
+}
+
+.grid-container div:hover {
+    background-color: black;
+}
