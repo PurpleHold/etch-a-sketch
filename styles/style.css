@@ -18,6 +18,12 @@
     width: 32px;
 }
 
+/*
 .grid-container div:hover {
+    background-color: black;
+}
+*/
+
+.hovered {
     background-color: black;
 }

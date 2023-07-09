@@ -6,14 +6,11 @@ for (i=0; i<256 ; i++) {
     gridContainer.innerHTML += "<div></div>";
 }
 
-const allSquares = document.querySelectorAll('.grid-container div');
+const allSquares = document.querySelectorAll('.grid-container > div');
 console.log(allSquares);
 
-/*
 allSquares.forEach(square => {
-    addEventListener("mouseover", () => {
-        
+    square.addEventListener("mouseover", (square) => {
+        square.target.style.backgroundColor = "red";
     })
 });
-
-*/
