@@ -1,6 +1,8 @@
 .global-container {
     display: flex;
+    flex-flow: column;
     align-items: center;
+    gap: 50px;
     justify-content: center;
     min-height: 90vh;
 }
@@ -8,14 +10,17 @@
 .grid-container {
     display: flex;
     flex-flow: wrap;
-    gap: 10px;
-    max-width: 672px;
+    gap: 1px;
+    width: 672px;
+    height: 672px;
 }
 
 .grid-container div {
     background-color: aliceblue;
-    height: 32px;
-    width: 32px;
+    height: 6px;
+    width: 6px;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*
