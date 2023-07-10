@@ -16,7 +16,8 @@
 }
 
 .new-div {
-    background-color: aliceblue;
+    background-color: rgb(108, 29, 218);
+    opacity: 0.1;
     width: 25px;
     aspect-ratio: 1 / 1;
 }
