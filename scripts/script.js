@@ -28,6 +28,10 @@ let newPixelsNb;
 
 askPixels.onclick = () => {
     newPixelsNb = Number(prompt("Choose the number of squares per side (default 32, max is 100)"));
+    if ((newPixelsNb > 100) || (newPixelsNb == NaN)  || (newPixelsNb < 0)) {
+        alert("Invalid number. Please use a number between 1 and 100.");
+        return;
+    }
     manyDivs = "";
     for (i=0; i<(newPixelsNb*newPixelsNb); i++) {
         manyDivs += '<div class="new-div"></div>';
