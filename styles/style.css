@@ -4,7 +4,6 @@
     align-items: center;
     gap: 50px;
     justify-content: center;
-    min-height: 90vh;
 }
 
 .grid-container {
@@ -12,23 +11,15 @@
     flex-flow: wrap;
     gap: 1px;
     width: 900px;
-    height: 500px;
+    height: 750px;
+    align-content: baseline;
 }
 
-.grid-container div {
+.new-div {
     background-color: aliceblue;
-    height: 6px;
-    width: 6px;
-    margin: 0px;
-    padding: 0px;
-    flex: 1 1 auto;
+    width: 25px;
+    aspect-ratio: 1 / 1;
 }
-
-/*
-.grid-container div:hover {
-    background-color: black;
-}
-*/
 
 .hovered {
     background-color: black;
